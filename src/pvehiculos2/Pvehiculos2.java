@@ -69,7 +69,8 @@ public class Pvehiculos2 {
         em.getTransaction().begin();
         
         
-        
+        em.close();
+        mongocliente.close();
         connection.close();
         
     }
